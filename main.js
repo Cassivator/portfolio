@@ -8,5 +8,10 @@ async function myId() {
 }
 
 async function setcount() {
-    document.getElementById("count").textContent = await fetch("https://wbst-api.sdisk.us/count/" + myId())
+  const res = await fetch("https://wbst-api.sdisk.us/count/" + await myId())
+  const data = await res.json()
+  document.getElementById("count").textContent =  "visitors: " + data.visitors
 }
+setcount()
+
+setcount()
