@@ -6,3 +6,7 @@ async function myId() {
   }
   return id
 }
+
+async function setcount() {
+    document.getElementById("count").textContent = await fetch("https://wbst-api.sdisk.us/count/" + myId())
+}
