@@ -13,8 +13,8 @@ async function setcount() {
   document.getElementById("count").textContent =  "visitors: " + data.visitors
 }
 
-setcount()
-
 fetch('footer.html')
   .then(r => r.text())
   .then(html => document.body.insertAdjacentHTML('beforeend', html));
+
+setcount()
