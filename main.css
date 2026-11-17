@@ -80,7 +80,8 @@ h2 {
 }
 
 .card {
-    max-width: 250px;
+    width: 250px;
+    min-height: 450px;
     color: #ffffff;
     background: #404040;
     border-radius: 8px;
