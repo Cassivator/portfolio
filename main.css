@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .space-mono-regular {
   font-family: "Space Mono", monospace;
@@ -24,26 +24,28 @@
   font-style: italic;
 }
 
-:root, *, *::before, *::after {
-    font-family: 'Space Mono', monospace !important;
-    --rt-font: "Space Mono", monospace;
+:root,
+*,
+*::before,
+*::after {
+  font-family: "Space Mono", monospace !important;
+  --rt-font: "Space Mono", monospace;
 }
 
-
 body {
-    display: flex;
-    font-size: 16px !important;
-    background-color: #000000;
-    background-image: url(assets/wallpaper.svg);
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    min-height: 1000px;
-    max-width:1600px ;
-    margin: auto;
+  display: flex;
+  font-size: 16px !important;
+  background-color: #000000;
+  background-image: url(assets/wallpaper.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 1000px;
+  max-width: 1600px;
+  margin: auto;
 }
 
 body > footer {
@@ -52,70 +54,72 @@ body > footer {
 }
 
 body > footer > div {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 50px;
 }
 
 h1 {
-    display: flex;
-    justify-content: space-between;
-    white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
 }
 
 h1 > div {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
 }
 
 h2 {
-    justify-self: center;
+  justify-self: center;
 }
 
 .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .card {
-    width: 250px;
-    min-height: 450px;
-    color: #ffffff;
-    background: #404040;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    box-sizing: border-box;
-    outline: none;
+  width: 250px;
+  min-height: 450px;
+  color: #ffffff;
+  background: #404040;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  outline: none;
 }
 
 a {
   color: #a283d7;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.15s ease, color 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
- 
+
 a:hover {
   color: #a890d1;
   border-bottom-color: currentColor;
 }
- 
+
 a:active {
   color: #a890d1;
 }
- 
+
 a:visited {
   color: #a890d1;
 }
- 
+
 a:focus-visible {
   outline: 2px solid #a890d1;
   outline-offset: 2px;
