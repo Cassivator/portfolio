@@ -131,7 +131,6 @@ p {
 mcmusic-bar {
   display: block;
   max-width: 200px;
-  margin: 12px;
   --mc-radius: 12px;
   --mc-font: inherit;
 }
