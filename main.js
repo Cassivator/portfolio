@@ -12,6 +12,9 @@ async function setcount() {
   const data = await res.json()
   document.getElementById("count").textContent =  "visitors: " + data.visitors
 }
-setcount()
 
 setcount()
+
+fetch('footer.html')
+  .then(r => r.text())
+  .then(html => document.body.insertAdjacentHTML('beforeend', html));
