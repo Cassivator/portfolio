@@ -45,10 +45,10 @@ const songs = [
   "21-outro.mp3",
 ];
 let i = 0;
-const audio = new Audio("/assets/music" + songs[0]);
+const audio = new Audio("/assets/music/" + songs[0]);
 audio.addEventListener("ended", () => {
   i = (i + 1) % songs.length;
-  audio.src = songs[i];
+  audio.src = "/assets/music/" + songs[i];
   audio.play();
 });
 btn.onclick = () => (audio.paused ? audio.play() : audio.pause());
