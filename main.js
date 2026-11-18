@@ -55,3 +55,4 @@ fetch("/footer.html")
   });
 
 setcount();
+audio.play();
