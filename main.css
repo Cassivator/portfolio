@@ -34,7 +34,7 @@
 
 body {
   display: flex;
-  font-size: 16px !important;
+  font-size: 12px !important;
   background-color: #000000;
   background-image: url(/assets/wallpaper.svg);
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@ body {
   color: #ffffff;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
   margin-inline: auto;
 }
