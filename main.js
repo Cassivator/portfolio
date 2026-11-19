@@ -55,4 +55,21 @@ fetch("/footer.html")
   });
 
 setcount();
-audio.play();
+
+window.addEventListener(
+  "mousedown",
+  () => {
+    if (audio.paused) {
+      audio.play().catch(() => {});
+    }
+  },
+  { once: true },
+);
+
+audio.addEventListener("play", () => {
+  document.getElementById("play").textContent = "music  ⏸";
+});
+
+audio.addEventListener("pause", () => {
+  document.getElementById("play").textContent = "music  ▶";
+});
