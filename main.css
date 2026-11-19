@@ -43,8 +43,9 @@ body {
   color: #ffffff;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 1600px;
+  max-width: 600px;
   margin: auto;
+  margin-inline: auto;
 }
 
 body > footer {
