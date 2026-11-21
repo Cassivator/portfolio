@@ -49,21 +49,29 @@ audio.addEventListener("ended", () => {
 fetch("/scripts.html")
   .then((r) => r.text())
   .then((head) => {
-    document.body.insertAdjacentHTML("beforeEnd", head);
+    const doc = new DOMParser().parseFromString(head, "text/html");
+    for (const old of doc.querySelectorAll("script")) {
+      const s = document.createElement("script");
+      for (const a of old.attributes) s.setAttribute(a.name, a.value);
+      s.async = false;
+      s.textContent = old.textContent;
+      document.body.append(s);
+    }
+    doc.querySelectorAll("link, meta").forEach((n) => document.head.append(n));
   });
 
 fetch("/footer.html")
   .then((r) => r.text())
-  .then((html) => {
-    document.body.insertAdjacentHTML("beforeEnd", html);
+  .then((body) => {
+    document.body.insertAdjacentHTML("beforeEnd", body);
     document.getElementById("play").onclick = () =>
       audio.paused ? audio.play() : audio.pause();
   });
 
 fetch("/topbar.html")
   .then((r) => r.text())
-  .then((html) => {
-    document.body.insertAdjacentHTML("afterBegin", html);
+  .then((body) => {
+    document.body.insertAdjacentHTML("afterBegin", body);
   });
 
 setcount();
