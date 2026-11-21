@@ -131,6 +131,7 @@ p {
 
 mcmusic-bar {
   display: block;
+  max-width: 250px;
   --max-len: 10;
   --speed: 5;
   --mc-radius: 12px;
