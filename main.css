@@ -106,7 +106,7 @@ a {
     color 0.15s ease;
 }
 
-a:hover {
+a:not(.88x31):hover {
   color: #a890d1;
   border-bottom-color: currentColor;
 }
