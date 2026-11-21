@@ -46,6 +46,12 @@ audio.addEventListener("ended", () => {
   audio.play();
 });
 
+fetch("/scripts.html")
+  .then((r) => r.text())
+  .then((head) => {
+    document.body.insertAdjacentHTML("beforeEnd", head);
+  });
+
 fetch("/footer.html")
   .then((r) => r.text())
   .then((html) => {
@@ -58,8 +64,6 @@ fetch("/topbar.html")
   .then((r) => r.text())
   .then((html) => {
     document.body.insertAdjacentHTML("afterBegin", html);
-    document.getElementById("play").onclick = () =>
-      audio.paused ? audio.play() : audio.pause();
   });
 
 setcount();

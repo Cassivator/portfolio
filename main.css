@@ -46,7 +46,8 @@ body {
   max-width: 700px;
   margin: auto;
   margin-inline: auto;
-  backdrop-filter: blur(100);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 body > footer {
