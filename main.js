@@ -49,7 +49,15 @@ audio.addEventListener("ended", () => {
 fetch("/footer.html")
   .then((r) => r.text())
   .then((html) => {
-    document.body.insertAdjacentHTML("beforeend", html);
+    document.body.insertAdjacentHTML("beforeEnd", html);
+    document.getElementById("play").onclick = () =>
+      audio.paused ? audio.play() : audio.pause();
+  });
+
+fetch("/topbar.html")
+  .then((r) => r.text())
+  .then((html) => {
+    document.body.insertAdjacentHTML("afterBegin", html);
     document.getElementById("play").onclick = () =>
       audio.paused ? audio.play() : audio.pause();
   });
