@@ -3,6 +3,10 @@ const links = [
     ["0stormy.xyz", "https://0stormy.xyz/assets/88x31.png"],
     ["pnk.wtf", "https://pnk.wtf/images/88x31.png"],
     ["rotur.dev", "https://rotur.dev/rotur-88x31.png"],
+    [
+        "roturassistant.com",
+        "https://static.roturassistant.com/promo/RA_88x31.png",
+    ],
 ];
 
 const div = document.getElementById("buttons");
