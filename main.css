@@ -106,7 +106,7 @@ a {
     color 0.15s ease;
 }
 
-a:not(.88x31):hover {
+a:not(:has(img[class*="81x33"])):hover {
   color: #a890d1;
   border-bottom-color: currentColor;
 }
