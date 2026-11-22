@@ -84,7 +84,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 20px;
   width: 100%;
   overflow: hidden;
 }
@@ -140,4 +140,8 @@ mcmusic-bar {
   --speed: 5;
   --mc-radius: 12px;
   --mc-font: inherit;
+}
+
+div {
+  gap: 20px;
 }
